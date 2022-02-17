@@ -2,7 +2,7 @@
   <div class="todo-list">
       <h2 v-show="todos.length == 0">This list is empty</h2>
       <ul v-for="todo in todos" :key="todo">
-          <li>{{todo.content}} <button @click="getTodo(todo)">X</button></li>
+          <li :class="{done : todo.done}"> <input type="checkbox" name="done" v-model="todo.done" id=""> {{todo.content}} <button @click="getTodo(todo)">X</button></li>
       </ul>
   </div>
 </template>
@@ -20,5 +20,7 @@ export default {
 </script>
 
 <style>
-
+    .done{
+        text-decoration: line-through;
+    }
 </style>
