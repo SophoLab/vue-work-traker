@@ -1,9 +1,11 @@
 <script setup>
+  import Todo from './components/Todo.vue';
 </script>
 
 <template>
     <main>
-    <h1>Hello Wolrd</h1>
+    <h1>My WorkTraker App 🏷️</h1>
+    <Todo/>
   </main>
 </template>
 
