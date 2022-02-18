@@ -3,8 +3,8 @@
 </script>
 
 <template>
-    <main>
-    <h1>My WorkTraker App 🏷️</h1>
+    <main class="font-mono p-20">
+    <h1 class="text-4xl">My WorkTraker App 🏷️</h1>
     <Todo/>
   </main>
 </template>

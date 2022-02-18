@@ -1,5 +1,5 @@
 <template>
-    <button @click="taskFilter">{{showTask}}</button>
+    <button @click="taskFilter" class="border border-solid py-2 px-5  border-yellow-400 bg-amber-500 hover:bg-amber-600 text-white font-bold" >{{showTask}}</button>
 </template>
 
 <script>
