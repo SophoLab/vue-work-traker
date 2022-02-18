@@ -47,17 +47,18 @@ export default {
     },
     computed : {
       todoNumber(){
-        return this.todos.length
+        return this.taskNotDone.length
       },
       filterTask(){
-          if(this.showTask){
-            console.log('display complete task');
-            return this.todos.filter((task) => {return task.done == true})
-          }
-            console.log('display  all task');
-            return this.todos
-        }
+          return this.showTask ? this.taskDone : this.todos
+        },
+      taskDone(){
+          return this.todos.filter((task) => {return task.done == true})
+        },
+      taskNotDone(){
+          return this.todos.filter((task) => {return task.done == false})
       }
+    }
 }
 </script>
 
